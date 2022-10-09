@@ -95,6 +95,8 @@ class ZLPhotoPreviewController: UIViewController {
         label.textAlignment = .center
         label.layer.cornerRadius = 25.0 / 2
         label.layer.masksToBounds = true
+        label.layer.borderColor = UIColor.white.cgColor
+        label.layer.borderWidth = 2
         label.isHidden = true
         return label
     }()

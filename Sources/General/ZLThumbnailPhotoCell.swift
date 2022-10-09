@@ -84,6 +84,8 @@ class ZLThumbnailPhotoCell: UICollectionViewCell {
         let label = UILabel()
         label.layer.cornerRadius = 23.0 / 2
         label.layer.masksToBounds = true
+        label.layer.borderColor = UIColor.white.cgColor
+        label.layer.borderWidth = 2
         label.textColor = .white
         label.font = .zl.font(ofSize: 14)
         label.adjustsFontSizeToFitWidth = true

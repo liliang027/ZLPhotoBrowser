@@ -1278,8 +1278,8 @@ class ZLEmbedAlbumListNavView: UIView {
     
     private lazy var titleBgControl: UIControl = {
         let control = UIControl()
-        control.backgroundColor = .zl.navEmbedTitleViewBgColor
-        control.layer.cornerRadius = ZLEmbedAlbumListNavView.titleViewH / 2
+//        control.backgroundColor = .zl.navEmbedTitleViewBgColor
+//        control.layer.cornerRadius = ZLEmbedAlbumListNavView.titleViewH / 2
         control.layer.masksToBounds = true
         control.addTarget(self, action: #selector(titleBgControlClick), for: .touchUpInside)
         return control

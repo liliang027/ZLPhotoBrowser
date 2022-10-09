@@ -464,7 +464,7 @@ public class ZLPhotoPreviewSheet: UIView {
     @objc private func photoLibraryBtnClick() {
         PHPhotoLibrary.shared().unregisterChangeObserver(self)
         animate = false
-        showThumbnailViewController()
+        showThumbnailViewControllerNonFullScreen()
     }
     
     @objc private func cancelBtnClick() {
@@ -666,6 +666,23 @@ public class ZLPhotoPreviewSheet: UIView {
             } else {
                 self.sender?.showDetailViewController(nav, sender: nil)
             }
+        }
+    }
+    
+    private func showThumbnailViewControllerNonFullScreen() {
+        ZLPhotoManager.getCameraRollAlbum(allowSelectImage: ZLPhotoConfiguration.default().allowSelectImage, allowSelectVideo: ZLPhotoConfiguration.default().allowSelectVideo) { [weak self] cameraRoll in
+            guard let `self` = self else { return }
+            let nav: ZLImageNavController
+            if ZLPhotoUIConfiguration.default().style == .embedAlbumList {
+                let tvc = ZLThumbnailViewController(albumList: cameraRoll)
+                nav = self.getImageNav(rootViewController: tvc)
+            } else {
+                nav = self.getImageNav(rootViewController: ZLAlbumListController())
+                let tvc = ZLThumbnailViewController(albumList: cameraRoll)
+                nav.pushViewController(tvc, animated: true)
+            }
+            nav.modalPresentationStyle = .currentContext
+            self.sender?.present(nav, animated: true, completion: nil)
         }
     }
     
