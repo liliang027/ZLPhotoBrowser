@@ -165,7 +165,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// Preview selection mode, cancel button title color when the selection amount is superior than 0.
     /// 预览快速选择模式下，按钮标题高亮颜色
-    @objc public var sheetBtnTitleTintColor: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var sheetBtnTitleTintColor: UIColor = .zl.rgba(56, 202, 159)
     
     /// A color for navigation bar.
     /// 相册列表及小图界面导航条背景色
@@ -261,7 +261,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// The normal state background color of bottom tool view buttons in preview interface.
     /// 预览大图界面底部按钮可交互状态下背景色
-    @objc public var bottomToolViewBtnNormalBgColorOfPreviewVC: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var bottomToolViewBtnNormalBgColorOfPreviewVC: UIColor = .zl.rgba(56, 202, 159)
     
     /// The disable state background color of bottom tool view buttons.
     /// 相册小图界面底部按钮不可交互状态下背景色
@@ -277,7 +277,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// The record progress color of custom camera.
     /// 自定义相机录制视频时进度条颜色
-    @objc public var cameraRecodeProgressColor: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var cameraRecodeProgressColor: UIColor = .zl.rgba(56, 202, 159)
     
     /// Mask layer color of selected cell.
     /// 已选择照片上方遮罩阴影颜色
@@ -285,7 +285,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// Border color of selected cell.
     /// 已选择照片border颜色
-    @objc public var selectedBorderColor: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var selectedBorderColor: UIColor = .zl.rgba(56, 202, 159)
     
     /// Mask layer color of the cell that cannot be selected.
     /// 不可选的照片上方遮罩阴影颜色
@@ -309,7 +309,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// The tint color of adjust slider.
     /// 编辑图片，调整饱和度、对比度、亮度时，右侧slider背景高亮色
-    @objc public var adjustSliderTintColor: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var adjustSliderTintColor: UIColor = .zl.rgba(56, 202, 159)
     
     /// The normal color of the title below the various tools in the image editor.
     /// 图片编辑器中各种工具下方标题普通状态下的颜色
