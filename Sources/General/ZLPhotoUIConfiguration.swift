@@ -257,7 +257,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// The normal state background color of bottom tool view buttons.
     /// 相册小图界面底部按钮可交互状态下背景色
-    @objc public var bottomToolViewBtnNormalBgColor: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var bottomToolViewBtnNormalBgColor: UIColor = .zl.rgba(56, 202, 159)
     
     /// The normal state background color of bottom tool view buttons in preview interface.
     /// 预览大图界面底部按钮可交互状态下背景色
@@ -297,7 +297,7 @@ public class ZLPhotoUIConfiguration: NSObject {
     
     /// The background color of selected cell index label.
     /// 已选照片右上角序号label背景色
-    @objc public var indexLabelBgColor: UIColor = .zl.rgba(80, 169, 56)
+    @objc public var indexLabelBgColor: UIColor = .zl.rgba(56, 202, 159)
     
     /// The background color of camera cell inside album.
     /// 相册小图界面拍照按钮背景色
