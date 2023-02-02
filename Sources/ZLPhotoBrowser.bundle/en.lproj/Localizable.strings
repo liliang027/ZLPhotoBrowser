@@ -20,7 +20,7 @@
 
 "noPhotoTips" = "No Photos";
 
-"hudLoading" = "waiting...";
+"hudLoading" = "Loading...";
 
 "exceededMaxSelectCount" = "Max count for selection: %ld";
 "longerThanMaxVideoDuration" = "Unable to select video with a duration longer than %lds";
